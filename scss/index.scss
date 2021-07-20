@@ -6,8 +6,8 @@
 
 // import page partials
 @import "partials/header";
-// @import "partials/fieldsets/commonfieldsets";
-// @import "partials/fieldsets/reservationfieldset";
+@import "partials/fieldsets/commonfieldsets";
+@import "partials/fieldsets/reservationfieldset";
 // @import "partials/fieldsets/datesFieldset";
-@import "partials/fieldsets";
+// @import "partials/fieldsets";
 @import "partials/footer";
