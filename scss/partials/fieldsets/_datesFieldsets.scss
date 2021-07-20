@@ -1,0 +1,57 @@
+input[type="date"] {
+    padding: 4px 5px;
+
+    &::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        @include defaultChangeTag;
+        right: 1%;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+select {
+    @include default;
+    @include defaultForForm;
+}
+
+textarea {
+    @include default;
+    @include defaultForForm;
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.item {
+    &:hover {
+        p {
+            color: $green;
+        }
+        i {
+            color: $green;
+        }
+    }
+
+    select {
+        &:hover {
+            @include defaultHover;
+        }
+    }
+
+    textarea {
+        &:hover {
+            @include defaultHover;
+        }
+    }
+
+    i {
+        @include defaultChangeTag;
+        right: 1%;
+        top: 30px;
+        z-index: 1;
+    }
+}

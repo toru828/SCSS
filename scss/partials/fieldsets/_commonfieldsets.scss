@@ -1,0 +1,79 @@
+@mixin default {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+// For using in input, select, textarea
+@mixin defaultForForm {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+@mixin defaultHover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0  $green;
+    color: $green;
+}
+
+@mixin defaultChangeTag {
+    position: absolute;
+    font-size: 20px;
+    color: $lightgreen;
+}
+
+input {
+    @include default;
+    @include defaultForForm;
+    width: calc(100% - 10px);
+    padding: 5px;
+
+    &:hover {
+        &::placeholder {
+            $color: $green;
+        }
+    }
+}
+
+label {
+    @include default;
+}
+
+legend {
+    padding: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: $green;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+
+    input {
+        &:hover {
+            @include defaultHover;
+        }
+    }
+
+    span {
+        color: red;
+    }
+}
+
+.columns {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+    div {
+        width:48%;
+    }
+}

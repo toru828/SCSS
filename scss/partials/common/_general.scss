@@ -1,0 +1,39 @@
+@mixin default {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    @include default;
+    min-height: 100%;
+}
+
+div {
+    @include default;
+}
+
+form {
+    @include default;
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 8px #006622; 
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
