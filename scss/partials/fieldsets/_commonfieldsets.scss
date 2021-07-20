@@ -4,14 +4,14 @@
     outline: none;
     font-family: Roboto, Arial, sans-serif;
     font-size: 14px;
-    color: #666;
+    color: $gray;
     line-height: 22px;
 }
 
 // For using in input, select, textarea
 @mixin defaultForForm {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $whitegray;
     border-radius: 3px;
 }
 
@@ -48,7 +48,7 @@ legend {
     padding: 10px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: $white;
     background-color: $green;
 }
 
