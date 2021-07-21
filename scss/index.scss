@@ -2,11 +2,11 @@
 
 // Import common definitions
 @import "partials/common/colors";
+@import "partials/common/mixins";
 @import "partials/common/general";
+@import "partials/common/button";
 
 // import page partials
-@import "partials/header";
-@import "partials/fieldsets/commonfieldsets";
-// @import "partials/fieldsets/reservationfieldset";
-@import "partials/fieldsets/datesFieldset";
-@import "partials/footer";
+@import "partials/banner";
+@import "partials/fieldsets";
+@import "partials/btn-block";
