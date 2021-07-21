@@ -19,10 +19,3 @@
     box-shadow: 0 0 3px 0  $green;
     color: $green;
 }
-
-@mixin defaultTag {
-    position: absolute;
-    font-size: 20px;
-    color: $lightgreen;
-    right: 1%;
-}

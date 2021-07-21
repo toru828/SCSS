@@ -10,7 +10,11 @@ legend {
         justify-content:space-between;
         flex-direction:row;
         flex-wrap:wrap;
-    
+        
+        div {
+            width:48%;
+        }
+
         input {
             @include default;
             @include defaultBorder;
@@ -42,10 +46,6 @@ legend {
                 color: red;
             }
         }
-    
-        div {
-            width:48%;
-        }
     }
 
     .dates {
@@ -53,6 +53,10 @@ legend {
         justify-content:space-between;
         flex-direction:row;
         flex-wrap:wrap;
+        
+        div {
+            width:48%;
+        }
     
         input {
             @include default;
@@ -68,7 +72,10 @@ legend {
                 }
         
                 &::-webkit-calendar-picker-indicator {
-                    @include defaultTag;
+                    position: absolute;
+                    font-size: 20px;
+                    color: $lightgreen;
+                    right: 1%;
                     z-index: 2;
                     opacity: 0;
                     cursor: pointer;
@@ -134,13 +141,13 @@ legend {
             }
         
             i {
-                @include defaultTag;
+                position: absolute;
+                font-size: 20px;
+                color: $lightgreen;
+                right: 1%;
                 top: 30px;
                 z-index: 1;
             }
-        }
-        div {
-            width:48%;
         }
     }
 }
