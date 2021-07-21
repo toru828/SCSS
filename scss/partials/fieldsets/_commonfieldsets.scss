@@ -9,7 +9,7 @@
 }
 
 // For using in input, select, textarea
-@mixin defaultForForm {
+@mixin defaultBorder {
     margin-bottom: 10px;
     border: 1px solid $whitegray;
     border-radius: 3px;
@@ -21,7 +21,7 @@
     color: $green;
 }
 
-@mixin defaultChangeTag {
+@mixin defaultTag {
     position: absolute;
     font-size: 20px;
     color: $lightgreen;
@@ -29,7 +29,7 @@
 
 input {
     @include default;
-    @include defaultForForm;
+    @include defaultBorder;
     width: calc(100% - 10px);
     padding: 5px;
 
