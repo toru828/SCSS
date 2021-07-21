@@ -1,0 +1,29 @@
+html {
+    min-height: 100%;
+}
+
+div {
+    @include default;
+}
+
+body {
+    @extend div;
+    @extend html;
+}
+
+form {
+    @extend div;
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: $white;
+    box-shadow: 0 0 8px $green; 
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}

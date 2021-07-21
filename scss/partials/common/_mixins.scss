@@ -1,0 +1,21 @@
+@mixin default {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: $gray;
+    line-height: 22px;
+}
+
+@mixin defaultBorder {
+    margin-bottom: 10px;
+    border: 1px solid $whitegray;
+    border-radius: 3px;
+}
+
+@mixin defaultHover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0  $green;
+    color: $green;
+}

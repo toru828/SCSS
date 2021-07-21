@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// Import common definitions
+@import "partials/common/colors";
+@import "partials/common/mixins";
+@import "partials/common/general";
+@import "partials/common/button";
+
+// import page partials
+@import "partials/banner";
+@import "partials/fieldsets";
+@import "partials/btn-block";
